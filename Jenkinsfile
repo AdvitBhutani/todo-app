@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Run Docker Container') {
             steps {
-                bat 'docker run -d -p 8083:8080 todo-app:latest'
+                bat 'docker run -d -p 8090:8080 todo-app:latest'
             }
         }
     }
